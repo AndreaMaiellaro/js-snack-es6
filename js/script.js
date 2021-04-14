@@ -43,10 +43,12 @@ const { nome, peso } = biciLeggera;
 
 const testoLiteral = `
     <ul>
-        <li>${nome}</li>
-        <li>${peso}</li>
+        <li>Nome della bici: ${nome}</li>
+        <li>Peso della bici:${peso}</li>
     </ul>
-`
+`;
+
+document.getElementById('bici').innerHTML = testoLiteral;
 
 //es 2
 const squadre = [
@@ -89,5 +91,5 @@ for ( let i = 0; i < squadre.length; i++) {
     console.log(nuoviPunti);
     console.log(nuoviFalli);
 
-    console.log(thisSquadra.nome, 'Falli subiti', nuoviFalli)
+    console.log('Squadra : ', thisSquadra.nome, '.', 'Falli subiti : ', nuoviFalli)
 }
